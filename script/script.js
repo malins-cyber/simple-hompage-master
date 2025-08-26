@@ -1,3 +1,5 @@
+const toggleBtn = document.querySelector("#toggle_btn");
+const navbar = document.querySelector(".navbar");
 const toggleSwitch = document.getElementById("theme_toggle");
 
 // Apply saved theme on load
@@ -15,4 +17,9 @@ toggleSwitch.addEventListener("change", function () {
         document.body.classList.remove("dark_mode");
         localStorage.setItem("theme", "light");
     }
+});
+
+
+toggleBtn.addEventListener('click', () => {
+    navbar.classList.toggle("active");
 });

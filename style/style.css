@@ -318,10 +318,10 @@ body.dark_mode .demo_link:hover {
 /* mobile navbar */
 @media (320px <= width <= 480px) {
   header {
-    background-color: red;
+    /* background-color: red; */
   }
   .navbar {
-    display: initial;
+    /* display: initial; */
     position: absolute;
     top: 12%;
     left: 0;
@@ -330,6 +330,10 @@ body.dark_mode .demo_link:hover {
     height: 50%;
     transform: translateX(-50%, -50%);
     background-color: var(--dm-bcolor);
+  }
+
+  .navbar.active{
+    display: initial;
   }
 
   .night_mode {
